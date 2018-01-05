@@ -1,0 +1,69 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="The official website of Goldy Mariz Lunesa">
+  <meta name="author" content="Goldy Mariz Lunesa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>gmlunesa</title>
+  <link rel="shortcut icon" href="assets/icon.ico"> <!-- Icon was made by FreePik -->
+
+  <link rel="stylesheet" type="text/css" href="/css/jquery.pagepiling.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.pagepiling.js"></script>
+  
+</head>
+
+<body>
+
+	<div id="pagepiling">
+            <div class="section">Section 1</div>
+            <div class="section">Section 2</div>
+            <div class="section">Section 3</div>
+            <div class="section">Section 4</div>
+  </div>
+
+        <script type="text/javascript">
+
+	$(document).ready(function() {
+		$('#pagepiling').pagepiling({
+		    menu: null,
+	        direction: 'vertical',
+	        verticalCentered: true,
+	        sectionsColor: [],
+	        anchors: [],
+	        scrollingSpeed: 700,
+	        easing: 'swing',
+	        loopBottom: false,
+	        loopTop: false,
+	        css3: true,
+	        navigation: {
+	            'textColor': '#000',
+	            'bulletsColor': '#000',
+	            'position': 'right',
+	            'tooltips': ['section1', 'section2', 'section3', 'section4']
+	        },
+	       	normalScrollElements: null,
+	        normalScrollElementTouchThreshold: 5,
+	        touchSensitivity: 5,
+	        keyboardScrolling: true,
+	        sectionSelector: '.section',
+	        animateAnchor: false,
+
+			//events
+			onLeave: function(index, nextIndex, direction){},
+			afterLoad: function(anchorLink, index){},
+			afterRender: function(){},
+		});
+	});
+
+</script>
+
+</body>
+
+
+
+
+
+
+</html>
