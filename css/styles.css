@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ddcdcf;
+  color: #b17981;
+  margin: 0; padding: 0;
+  text-align: center;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 48px;
+  line-height: 46px;
+  color: #67242e;
+}
+
+p {
+  margin: 20px 0;
+}
+a {
+  color:indianred;
+  text-decoration: none;
+}
+a:hover{
+  color:maroon;
+}
+
+.section {
+
+}
+.home {
+  background-image: url(../assets/workspace.png);
+  background-size: cover;
+}
+
+.home p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 33px;
+  color: #67242e;
+
+}
