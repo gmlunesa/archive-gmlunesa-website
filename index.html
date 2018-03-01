@@ -8,7 +8,7 @@
   <title>gmlunesa</title>
   <link rel="shortcut icon" href="assets/gmlunesa.png">
 
-  <link rel="stylesheet" type="text/css"href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
@@ -20,12 +20,16 @@
 
 <body>
 
+  <button id="arrow"> <span>↓</span></button>
+
 	<div id="pagepiling">
 		<!-- First page -->
     <div class="section">
     	<div class="container text-center">
     		<img src="assets/gmlunesa.png" class="img-fluid">
     		<h1>Hi, I'm Goldy Mariz Lunesa</h1>
+
+        
     	</div>
     </div>
 
@@ -163,8 +167,8 @@
   	        loopTop: false,
   	        css3: true,
   	        navigation: {
-  	            'textColor': 'transparent',
-  	            'bulletsColor': 'transparent',
+  	            'textColor': '#aaa',
+  	            'bulletsColor': '#aaa',
   	            'position': 'right',
   	            'tooltips': ['home', 'portfolio', 'contact', 'about']
   	        },
@@ -173,7 +177,7 @@
   	        // touchSensitivity: 5,
   	        keyboardScrolling: true,
   	        sectionSelector: '.section',
-  	        animateAnchor: false,
+  	        animateAnchor: true,
 
   			//events
   			   onLeave: function(index, nextIndex, direction){
@@ -187,7 +191,7 @@
 
             //reaching our last section? The one with our normal site?
             if (nextIndex != 4) {
-                $('#arrow').hide();
+                //$('#arrow').hide();
 
                 //fading out navigation bullets
                 $('#pp-nav').fadeOut();
@@ -213,6 +217,13 @@
         // And make this active
         $(this).addClass("active");
       }
+    });
+  </script>
+
+  <script type="text/javascript">
+    
+    $('#arrow').click(function () {
+        $.fn.pagepiling.moveSectionDown();
     });
   </script>
 
