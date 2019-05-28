@@ -28,10 +28,6 @@ html {
 	}
 }
 
-.icons-social i {
-	font-size: 3em;
-}
-
 /* Custom Styles */
 
 main {
@@ -71,6 +67,26 @@ main > .tagline {
 	height: 15rem;
 	border-radius:50%;
 	margin: 0.2rem 0;
+}
+.icons-social {
+	font-size:0.5rem;
+	margin-top: 1.5rem;
+}
+.icons-social a {
+	color: #FAFAFA;
+	margin: 0 1.5rem;
+}
+
+.icons-social a:hover {
+	color: #a9c5e5;
+}
+
+.icons-social i {
+	font-size: 4em;
+}
+
+.icons-social a svg path{
+	fill: #FAFAFA;
 }
 
 .typed-cursor{
