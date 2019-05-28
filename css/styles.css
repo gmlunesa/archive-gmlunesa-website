@@ -1,0 +1,98 @@
+/* Typography */
+
+html {
+	font-family: 'Consolas', sans-serif;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+/* Custom Styles */
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+	
+	background: #3d4855;
+	color: #FAFAFA;
+}
+
+main > .intro {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3.5em;
+	font-weight: 600;
+	margin: 0.5rem 0;
+}
+
+main > .tagline {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	font-weight: 100;
+}
+
+.copyright {
+	font-size: 0.5rem;
+	margin: 1rem 0;
+	font-weight: 50;
+}
+
+.profile {
+	width: 15rem;
+	height: 15rem;
+	border-radius:50%;
+	margin: 0.2rem 0;
+}
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  font-size: 1.5rem;
+}
+
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
